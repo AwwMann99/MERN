@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(235, 53, 113)">
+    <style>
+        
+        table{
+            background-color: rgb(122, 0, 37);
+            color: white;
+            width:500px;
+            border: 0px;
+
+        }
+        input{
+            width: 60%;
+        }
+        .x{
+            input{
+                width: 10%;
+            }
+
+        }
+    </style>
+    <form>
+    <table cellpadding ="10px" cellspacing="0" width ="100px" align ="center">
+        <tr>
+            <td>
+                <label for ="name"> Name:</label>
+            </td>
+            <td><input name ="name" placeholder="your name" type ="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for ="user">E-mail:</label>
+            </td>
+            <td><input name ="user" placeholder="your e-mail" type ="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for ="psw">Password:</label>
+            </td>
+            <td><input name ="psw" type ="password"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for ="rep">Phone no:</label>
+            </td>
+            <td><input name ="rep" type ="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for ="ag">Gender:</label>
+            </td>
+            <td nowrap>
+      
+                <div class="x">
+
+                <input  type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+           <label for="female">Female</label>
+            <input type="radio" id="Others" name="gender" value="others">
+            <label for="Others">Others</label>
+        </div>
+       
+        </td>        
+         
+        </tr>
+        <tr>
+            <td>
+                <label>language</label>
+            </td>
+            <td>
+            <select>
+                <option>English</option>
+                <option>German</option>
+                <option>Hindi</option>
+                <option>kannada</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <label for ="ag">ZipCode:</label>
+            </td>
+            <td><input name ="ag" type ="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for ="Address">About:</label>
+            </td>
+            <td><input style="height: 50px;" name ="Address" type ="text"  placeholder=" Write about yourself..."></td>
+        </tr>
+        
+
+        <tr>
+            <td colspan ="2">
+              <input style="width:500px; height: 50px"type="button" value="Register">
+                
+            </td>
+        </tr>
+
+    </table>   
+    </form>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table {border: 1px solid black;}
+    td {border: 1px solid black; height:0; } 
+    th {border: 1px solid black; }
+    h2{color:rgb(74, 0, 247);}
+    </style>
+</head>
+<body>
+    <h2 align="center" >Registration Form</h2> 
+    <table style="border: 1px solid black"; cellspacing="0" width ="50%" align ="center" cellpadding = 0px border-spacing = "0px" border-collapse="separate">
+        <tr>
+            <th nowrap width="30%">
+                <label for ="name" >First Name</label>
+            </th>
+            <td width="100%" align="center"><input name ="name" type ="text" size="100"></td>
+        </tr>
+        <tr>
+            <th nowrap width="30%">
+                <label for ="lname">Last Name:</label>
+            </th>
+            <td width="100%" align="center"><input name ="lname" type ="text" size="100"></td>
+        </tr>
+        <tr>
+            <th>
+                <label for ="user">Email:</label>
+            </th>
+            <td><input name ="user" type ="text" size="100"></td>
+        </tr>
+        <tr>
+            <th>
+                <label for ="psw">Password:</label>
+            </th>
+            <td><input name ="psw" type ="password" size="100"></td>
+        </tr>
+        <tr>
+            <th>
+                <label for ="rep">Re-enter Password:</label>
+            </th>
+            <td><input name ="rep" type ="password" size="100" ></td>
+        </tr>
+        <tr>
+            <th rowspan ="2">
+                <label>Gender</label>
+            </th>
+            <td><input type="radio">Male</td>   
+            <tr>
+                <td><input type ="radio">Female</td>
+                </tr>
+        </tr>
+        
+        <tr>
+            <th>
+                <label for ="ag">Age:</label>
+            </th>
+            <td><input name ="ag" type ="text" size="100"></td>
+        </tr>
+        <tr>
+            <th>
+                <label for ="no">Phone Number</label>
+            </th>
+            <td><input name ="no" type ="text" size="100"></td>
+        </tr>
+        <tr>
+            <th >
+                <label for ="Address">Address:</label>
+            </th>
+            <td><input name ="Address" type ="text" size="100"></td>
+        </tr>
+        <tr>
+            <th>
+                <label for ="state">State</label>
+            </th>
+            <td><input name ="state" type ="text" size="100"></td>
+        </tr>
+        <tr>
+            <th>
+                <label>Country</label>
+            </th>
+            <td>
+            <select>
+                <option>Choose your country</option>
+                <option>India</option>
+                <option>South America</option>
+                <option>France</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <th width="200px">
+                <label for ="lname">Languages Known</label>
+            </th>
+            <td><input name ="lname" type ="checkbox">English
+                <input name ="lname" type ="checkbox">kannada
+                <input name ="lname" type ="checkbox">Hindi
+                <input name ="lname" type ="checkbox">Telegu
+            </td>        
+        </tr>
+        <tr>
+            <td colspan ="2"><input name ="lname" type ="checkbox">Hereby I declare all the given details are true</td>
+        </tr>
+        <tr>
+            <td align="right" colspan="2">Log in to <a href="www.ethnus.com">Ethnus</a> Website</td>
+        </tr>
+        </table>
+        <br/>
+       
+        <div id ="i" align="center">
+            <input type="submit" value="Register">
+          </div>
+                   
+</body>
+</html>     
