@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+            margin-left: 400px;
+            position: relative;
+            animation: anima 2s infinite;
+            animation-play-state: paused;
+        }
+        @keyframes anima 
+        {
+        from {left: 0px;} to {left:1080px;}
+        }
+
+    </style>
+<script>
+    function play() {
+  document.getElementById("img").style.animationPlayState = "running";
+}
+
+function stop() {
+  document.getElementById("img").style.animationPlayState = "paused";
+}
+
+</script>
+   <img id="img"  src="./isolated-young-handsome-man-different-poses-white-background-illustration_632498-859.avif">
+   <br>
+   <br>
+   <br>
+   <center>
+   <h2 style="color: blue">Click the following buttons to handle animation</h2>
+   <button onclick="play()">Play</button>
+<button onclick="stop()">Stop</button>
+</center>
+</body>
+</html>

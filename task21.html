@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   function mult()
+{
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+        document.getElementById("res").innerHTML = num1 * num2;
+}
+
+function divi() 
+{ 
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+document.getElementById("res").innerHTML = num1 / num2;
+}
+
+</script>
+<body>
+    <table>
+        <form>
+            <tr>
+                <td>
+                    <label>1st Number</label>
+            <input id ="num1" type ="text"/> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>2nd Number</label>
+                    <input id ="num2"type ="text"/>
+                </td>
+            </tr>
+           <tr><td>
+            <input type="button" id = "mul" onclick="mult()" value="Multiply"/>
+            <input type="button" id ="div" onclick="divi()"value="Divid"/>
+           </td></tr>
+            <tr>
+                <td> <h3>The result Is:</h3>
+                    <span id = "res"></span></td>
+            </tr>
+           
+
+        </form>
+
+    </table>
+   
+</body>
+</html>
