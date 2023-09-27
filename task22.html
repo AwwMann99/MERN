@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function monthName() {
+        const cd = new Date();
+        const monthNames = [
+            "January", "February", "March", "April",
+            "May", "June", "July", "August",
+            "September", "October", "November", "December"
+        ];
+        const num = cd.getMonth();
+        const month = monthNames[num];
+        return month;
+    }
+    function dayName(){
+      const dd = new Date();
+      const dayNames=["Sun","Mon","Tue","Wed","Thurs","Fri","Sat"];
+      const num = dd.getDay();
+      const day =dayNames[num];
+      return day;
+    }
+    function monthshort(){
+      const bb= new Date();
+      const monthShort = [
+            "Jan", "Feb", "Mar", "Apr",
+            "May", "Jun", "Jul", "Aug",
+            "Sept", "Oct", "Nov", "Dec"
+        ];
+      const num = bb.getMonth();
+      const monTh =monthShort[num];
+      return monTh;
+    }
+    
+
+    function Datee() {
+        const date = new Date();
+        const day = date.getDate();
+        const year = date.getFullYear();
+        const time = date.getDay();
+        const Time = date.get;
+        const fd = `${day}/${monthName()}/${year}`;
+      
+
+        document.getElementById("Date").innerHTML = fd;
+      
+        console.log(fd);
+        console.log(`${monthshort()}`)
+    }
+    
+  
+      
+        
+    function Dattee() {
+        const date = new Date();
+        const day = date.getDate();
+        const year = date.getFullYear();
+        const time = date.getDay();
+        const Time = date.get;
+        const fd = `${day}/${monthName()}/${year}`;
+        const hour=date.getHours();
+        const min= date.getMinutes();
+        const sec=date.getSeconds();
+        const tz =date.getTimezoneOffset();
+        const ft=`${dayName()} ${monthshort()} ${year} ${hour}:${min}:${sec} ${tz} ` ;
+        document.getElementById("time").innerHTML = ft;
+      
+        console.log(ft);
+        console.log(teme);
+      
+       
+    }
+        
+      
+        
+    
+    
+  </script>  
+
+  <input type="button" id="dateButton" onclick="Datee()" value="show date"/>
+  <div id="Date"></div>
+  <input type="button" id="timeButton" onclick="Dattee()" value="show Time"/>
+  <div id="time"></div>
+</body>
+</html>
